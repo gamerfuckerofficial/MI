@@ -111,7 +111,7 @@ async def ws(event):
 
 
 __help__ = """
-Senku can protect your group from NSFW $hit#y spammers.
+Miakhalifa can protect your group from NSFW $hit#y spammers.
 
 • `/addnsfw`*:* Adds The Group to nsfw Watch List
 • `/rmnsfw`*:* Removes The Group From nsfw Watch List
