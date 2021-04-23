@@ -1,5 +1,5 @@
 {
-      "name": "SenkuRobot",
+      "name": "MI",
       "description": "Telegram group management bot.",
       "keywords": [
          "telegram",
@@ -8,7 +8,7 @@
          "manager",
          "Masha"
       ],   
-   "repository": "https://github.com/FtSasaki/SenkuRobot",
+   "repository": "https://github.com/gamerfuckerofficial/MI",
    "addons": [
       {
          "options": {
