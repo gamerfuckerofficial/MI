@@ -135,7 +135,7 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HA to demote this Dragon to Demon"
+        rt += "Requested MS to demote this Dragon to Demon"
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
@@ -144,7 +144,7 @@ def addsupport(
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this Wolf Disaster to Demon"
+        rt += "Requested MS to promote this Wolf Disaster to Demon"
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -539,7 +539,7 @@ def devlist(update: Update, context: CallbackContext):
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Hero Association Members ⚡️:</b>\n"
+    reply = "<b>Mia Support Members ⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -560,7 +560,7 @@ Group admins/group owners do not need these commands.
 • `/demons`*:* Lists all Demon disasters
 • `/tigers`*:* Lists all Tigers disasters
 • `/wolves`*:* Lists all Wolf disasters
-• `/heroes`*:* Lists all Hero Association members
+• `/heroes`*:* Lists all Mia Support members
 • `/adddragon`*:* Adds a user to Dragon
 • `/adddemon`*:* Adds a user to Demon
 • `/addtiger`*:* Adds a user to Tiger
