@@ -78,8 +78,8 @@ async def _(event):
         return
   prof = str(event.text)
   
-  if not "Senku" in prof:
-    if not "senku" in prof:
+  if not "missmiakhalifabot" in prof:
+    if not "missmiakhalifabot" in prof:
       reply_msg = await event.get_reply_message()
       if not reply_msg.sender_id == BOT_ID:
            return
@@ -120,7 +120,7 @@ async def _(event):
    except CFError as e:
            print(e)
   elif "Ann" in result:
-   pro = "Yeah, I am Senku"
+   pro = "Yeah, I am Miakhalifa"
    try:
       async with tbot.action(event.chat_id, 'typing'):
            await event.reply(pro)
