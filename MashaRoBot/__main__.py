@@ -81,7 +81,7 @@ I'm here to help you manage your groups! Hit *📚Commands* button below to find
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Me 🔘", url="t.me/SenkuRoBot?startgroup=true"),
+            text="➕️ Add Me 🔘", url="t.me/missmiakhalifabot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ About", callback_data="masha_"),
@@ -89,9 +89,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💾 Source", callback_data="source_"),
+            text="💢 Group", url="https://t.me/CheemsUserbot"),
         InlineKeyboardButton(
-            text="🔔 News", url="https://t.me/SenkuNews"
+            text="🔔 News", url="https://t.me/CheemsUserbot"
         ),
     ],
 ]
@@ -353,7 +353,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text="""⚡️ I'm *Senku*, a powerful group management bot built to help you manage your group easily.
+            text="""⚡️ I'm *MiaKhalifa*, a powerful group management bot built to help you manage your group easily.
 
 • I can restrict users.
 • I can greet users with customizable welcome messages and even set a group's rules.
@@ -362,11 +362,8 @@ def Masha_about_callback(update: Update, context: CallbackContext):
 • I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
 • I check for admins' permissions before executing any command and more stuffs.
 
-_Senku's licensed under the GNU General Public License v3.0_
 
-Here is the [💾 Repository](https://github.com/FtSasaki/SenkuRobot).
-
-If you have any question about Senku, let us know at @SenkuSupport.""",
+If you have any question about MiaKhalifa, let us know at @CheemsUserbot.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -392,8 +389,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hey there! I'm *SenkuRobot*
-                 \nHere is the 💾 [Source Code](https://github.com/FtSasaki/SenkuRobot) .""",
+            text=""" Hey there! I'm *MiaKhalifa*
+                 \nmy repo is private  .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
@@ -640,7 +637,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1209574071 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
