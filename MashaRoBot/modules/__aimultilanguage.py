@@ -14,7 +14,7 @@ from MashaRoBot.events import register
 
 string = (
   "Get Excited!",
-  "I am Senku!",
+  "I am Mia!",
 )
 
 
