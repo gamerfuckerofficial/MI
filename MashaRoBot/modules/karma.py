@@ -1,9 +1,9 @@
 
-from wbb import app
-from wbb.core.decorators.errors import capture_err
-from wbb.utils.dbfunctions import (update_karma, get_karma, get_karmas,
+from MashaRoBot import app
+from MashaRoBot.core.decorators.errors import capture_err
+from MashaRoBot.utils.dbfunctions import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int)
-from wbb.utils.filter_groups import karma_positive_group, karma_negative_group
+from MashaRoBot.utils.filter_groups import karma_positive_group, karma_negative_group
 from pyrogram import filters
 
 __MODULE__ = "Karma"
