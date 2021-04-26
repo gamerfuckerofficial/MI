@@ -2,7 +2,7 @@
 #By Eviral (github.com/TeamEviral ; t.me/Eviral)
 #Don't forget to give credit and make your source public.
 
-from Harita.events import register
+from MashaRoBot.events import register
 from os import remove, execle, path, environ
 import asyncio
 import sys
